@@ -20,8 +20,8 @@ import { EditarAlunoComponent } from './components/editar-aluno/editar-aluno.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,  // <- Adicione aqui o FormsModule
-    HttpClientModule  // <- Adicione aqui o HttpClientModule
+    FormsModule,
+    HttpClientModule 
   ],
   providers: [
     provideClientHydration(),

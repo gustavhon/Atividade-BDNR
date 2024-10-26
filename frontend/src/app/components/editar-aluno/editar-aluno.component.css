@@ -1,4 +1,3 @@
-/* Centralizar o conteúdo (Título e Formulário) na tela */
 body, html {
     height: 100%;
     margin: 0;
@@ -13,7 +12,6 @@ body, html {
     background-color: #f3f4f6;
   }
   
-  /* Estilo do título */
   h2 {
     text-align: center;
     color: #4CAF50;
@@ -21,7 +19,6 @@ body, html {
     font-weight: 600;
   }
   
-  /* Estilo do formulário */
   form {
     display: flex;
     flex-direction: column;
@@ -41,7 +38,6 @@ body, html {
     font-size: 16px;
   }
   
-  /* Estilo dos botões */
   button {
     padding: 12px;
     background-color: #4CAF50;
@@ -54,10 +50,9 @@ body, html {
   }
   
   button[type="button"] {
-    background-color: #f44336; /* Cor vermelha para o botão Cancelar */
+    background-color: #f44336;
   }
-  
-  /* Estilo das mensagens */
+
   .mensagem-sucesso {
     margin-top: 20px;
     padding: 10px;
