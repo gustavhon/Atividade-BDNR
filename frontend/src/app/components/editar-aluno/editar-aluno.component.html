@@ -1,0 +1,34 @@
+<div class="form-wrapper">
+    <h2>Editar Aluno</h2>
+    <form (ngSubmit)="onSubmit()">
+      <!-- Campos do formulário preenchidos automaticamente -->
+      <label for="codaluno">Código do Aluno</label>
+      <input id="codaluno" type="text" [(ngModel)]="aluno.codaluno" name="codaluno" required />
+  
+      <label for="nomealuno">Nome do Aluno</label>
+      <input id="nomealuno" type="text" [(ngModel)]="aluno.nomealuno" name="nomealuno" required />
+  
+      <label for="curso">Curso</label>
+      <input id="curso" type="text" [(ngModel)]="aluno.curso" name="curso" required />
+  
+      <label for="sexo">Sexo</label>
+      <select id="sexo" [(ngModel)]="aluno.sexo" name="sexo" required>
+        <option value="Masculino" [selected]="aluno.sexo === 'Masculino'">Masculino</option>
+        <option value="Feminino" [selected]="aluno.sexo === 'Feminino'">Feminino</option>
+      </select>
+  
+      <button type="submit">Salvar Alterações</button>
+      <button type="button" (click)="cancelar()">Cancelar</button>
+    </form>
+  
+    <!-- Exibir mensagem de sucesso -->
+    <div *ngIf="mensagemSucesso" class="mensagem-sucesso">
+      {{ mensagemSucesso }}
+    </div>
+  
+    <!-- Exibir mensagem de erro -->
+    <div *ngIf="mensagemErro" class="mensagem-erro">
+      {{ mensagemErro }}
+    </div>
+  </div>
+  

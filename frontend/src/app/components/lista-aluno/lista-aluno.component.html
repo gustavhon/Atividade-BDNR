@@ -1,0 +1,26 @@
+<div class="table-container">
+  <h2>Lista de Alunos</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Curso</th>
+        <th>Sexo</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aluno of alunos">
+        <td data-label="Código">{{ aluno.codaluno }}</td>
+        <td data-label="Nome">{{ aluno.nomealuno }}</td>
+        <td data-label="Curso">{{ aluno.curso }}</td>
+        <td data-label="Sexo">{{ aluno.sexo }}</td>
+        <td data-label="Ações">
+          <button class="editar" (click)="editar(aluno)">Editar</button>
+          <button class="excluir" (click)="excluir(aluno._id)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

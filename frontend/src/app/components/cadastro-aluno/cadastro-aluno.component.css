@@ -1,0 +1,92 @@
+/* Centralizar o conteúdo */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima de 100% da viewport */
+    background-color: var(--background-color);
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo do botão Cadastrar Aluno */
+button {
+    padding: 12px;
+    background-color: #4CAF50; /* Cor verde padrão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Estilo do botão Ver Lista de Alunos */
+.btn-view-list-wrapper {
+    margin-top: 20px;
+}
+
+.btn-view-list {
+    background-color: #FF5733; /* Cor vermelha */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Botão mais arredondado */
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Efeito de hover no botão Ver Lista de Alunos */
+.btn-view-list:hover {
+    background-color: #E74C3C; /* Tom mais escuro de vermelho */
+}
+
+/* Estilo da mensagem de sucesso */
+.mensagem-sucesso {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilo da mensagem de erro */
+.mensagem-erro {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+

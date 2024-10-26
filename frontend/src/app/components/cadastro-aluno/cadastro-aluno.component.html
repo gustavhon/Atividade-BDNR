@@ -1,0 +1,38 @@
+<div class="form-wrapper">
+    <h2>Cadastro de Aluno</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label for="codaluno">Código do Aluno</label>
+      <input id="codaluno" type="text" [(ngModel)]="aluno.codaluno" name="codaluno" required placeholder="Insira o código do aluno" />
+  
+      <label for="nomealuno">Nome do Aluno</label>
+      <input id="nomealuno" type="text" [(ngModel)]="aluno.nomealuno" name="nomealuno" required placeholder="Insira o nome do aluno" />
+  
+      <label for="curso">Curso</label>
+      <input id="curso" type="text" [(ngModel)]="aluno.curso" name="curso" required placeholder="Insira o curso" />
+  
+      <label for="sexo">Sexo</label>
+      <select id="sexo" [(ngModel)]="aluno.sexo" name="sexo" required>
+        <option value="" disabled selected>Selecione o sexo</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+      </select>
+  
+      <button type="submit">Cadastrar Aluno</button>
+    </form>
+  
+    <!-- Exibir mensagem de sucesso -->
+    <div *ngIf="mensagemSucesso" class="mensagem-sucesso">
+      {{ mensagemSucesso }}
+    </div>
+  
+    <!-- Exibir mensagem de erro -->
+    <div *ngIf="mensagemErro" class="mensagem-erro">
+      {{ mensagemErro }}
+    </div>
+  
+    <!-- Botão Ver Lista de Alunos -->
+    <div class="btn-view-list-wrapper">
+      <button routerLink="/alunos" class="btn-view-list">Ver Lista de Alunos</button>
+    </div>
+  </div>
+  
